@@ -1,0 +1,11 @@
+def sum_natural(n):
+    if n == 0:
+        return 0
+    else:
+        return n + sum_natural(n - 1)
+
+# Read input from the user
+n = int(input("Enter a number: "))
+
+# Print the result
+print("Sum of first", n, "natural numbers is:", sum_natural(n))
