@@ -1,0 +1,11 @@
+s=input()
+s=list(s)
+start=0
+last=len(s)-1
+while start<last:
+    temp=s[start]
+    s[start]=s[last]
+    s[last]=temp
+    start+=1
+    last-=1
+print("".join(s))
